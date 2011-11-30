@@ -1,0 +1,25 @@
+<html>
+<head><title>etchysketchy</title>
+<link rel=stylesheet href="etch.css" type="text/css"/>
+
+
+</head>
+<body>
+
+<span class="box" id="a1"onMouseOver="toRed('a1')">&nbsp;</span>
+
+<script type="text/javascript">
+function toBlack(theId){
+var temp=document.getElementById(theId);
+temp.style.background="black";
+}
+function toRed(theId){
+var temp=document.getElementById(theId);
+temp.style.background="red";
+}
+for(i=0;i<10000;i++){
+document.write("<span class=\"box\" id=\"a"+i+"\"onMouseOver=\"toBlack('a"+i+"')\">&nbsp;</span> ");
+}
+</script>
+</body>
+</head>

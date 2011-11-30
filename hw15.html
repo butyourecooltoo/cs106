@@ -1,0 +1,282 @@
+<html>
+<head><title>hw15</title>
+</head>
+<body>
+<script type="text/javascript">
+function format(){
+var plat=navigator.userAgent;
+var out=plat.search("iPhone");
+out+=plat.search("Android");
+if(out !=-2)
+	return "<link rel=stylesheet href=\"mobile.css\" type=\"text/css\" />";
+else
+	return"<link rel=stylesheet href=\"desktop.css\" type=\"text/css\" />"; 
+}
+
+function iphone(){
+var plat=navigator.platform;
+var out=plat.search("iPhone");
+if(out !=-1)
+	return "<h1>You're on an iPhone</h1>";
+else
+	return " "; 
+}
+function ipod(){
+var plat=navigator.platform;
+var out=plat.search("iPod");
+if(out !=-1)
+	return "<h1>You're on an iPod</h1>";
+else
+	return " "; 
+}
+function ipad(){
+var plat=navigator.platform;
+var out=plat.search("iPad");
+if(out !=-1)
+	return "<h1>You're on an iPad</h1>";
+else
+	return " "; 
+}
+function android(){
+var plat=navigator.userAgent;
+var out=plat.search("Android");
+if(out !=-1)
+	return "<h1>You're on Android!</h1>";
+else
+	return " "; 
+}
+function platformType(){
+var plat=navigator.userAgent;
+var out=plat.search("iPhone");
+out+=plat.search("Android");
+out+=plat.search("iPad");
+if(out !=-3)
+	return "";
+else
+	return "<h1>You're on some kind of less mobile computer</h1>"; 
+}
+
+function IE(){
+var browser=navigator.appName;
+var oot=browser.search("Internet");
+if(oot !=-1)
+return "<h1>and IE sucks, you need an actual browser.</h1>";
+else return "";
+}
+function firefox(){
+var browser=navigator.userAgent;
+var oot=browser.search("Firefox");
+if(oot !=-1)
+return "<h1>and you're using firefox</h1>";
+else return "";
+}
+function netscape(){
+var browser=navigator.userAgent;
+var oot=browser.search("Netscape");
+if(oot !=-1)
+return "<h1>and you're using netscape for some reason...</h1>";
+else return "";
+}
+function opera(){
+var browser=navigator.userAgent;
+var oot=browser.search("Opera");
+if(oot !=-1)
+return "<h1>using opera</h1>";
+else return "";
+}
+function chrome(){
+var browser=navigator.userAgent;
+var oot=browser.search("Chrome");
+if(oot !=-1)
+return "<h1>and you're using chrome</h1> ";
+else return "";
+}
+function ubuntu(){
+var OS=navigator.userAgent;
+var oot=OS.search("Ubuntu");
+if(oot !=-1)
+return "<h1> on ubuntu. </h1>";
+else return "";
+}
+function mac(){
+var OS=navigator.platform;
+var oot=OS.search("Mac");
+if(oot !=-1)
+return " <h1>running mac.</h1> ";
+else return "";
+}
+function ios5(){
+var OS=navigator.appVersion;
+var oot=OS.search("iPhone OS 5_0");
+if(oot !=-1)
+return " <h1>running iOS 5 </h1>";
+else return "";
+}
+function ipadios5(){
+var OS=navigator.appVersion;
+var oot=OS.search("iPad; CPU OS 5_0");
+if(oot !=-1)
+return " <h1>running iOS 5 </h1>";
+else return "";
+}
+function ios4(){
+var OS=navigator.appVersion;
+var oot=OS.search("iPhone OS 4");
+if(oot !=-1)
+return " <h1>running iOS 4 (you should get iOS 5 if you can!) </h1>";
+else return "";
+}
+function ipadios4(){
+var OS=navigator.appVersion;
+var oot=OS.search("iPad; CPU OS 4");
+if(oot !=-1)
+return " <h1>running iOS 4 (you should get iOS 5 if you can!) </h1>";
+else return "";
+}
+function windows(){
+var OS=navigator.userAgent;
+var oot=OS.search("Microsoft");
+if(oot !=-1)
+return " <h1>on windows... </h1>";
+else return "";
+}
+
+
+
+function iphoneicon(){
+var plat=navigator.platform;
+var out=plat.search("iPhone");
+if(out !=-1)
+	return "<img src=\"http://collegeby.me/images/iOS-icon.png\">";
+else
+	return " "; 
+}
+function ipodicon(){
+var plat=navigator.platform;
+var out=plat.search("iPod");
+if(out !=-1)
+	return "<img src=\"http://collegeby.me/images/iOS-icon.png\">";
+else
+	return " "; 
+}
+function ipadicon(){
+var plat=navigator.platform;
+var out=plat.search("iPad");
+if(out !=-1)
+	return "<img src=\"http://collegeby.me/images/iOS-icon.png\">";
+else
+	return " "; 
+}
+function androidicon(){
+var plat=navigator.userAgent;
+var out=plat.search("Android");
+if(out !=-1)
+	return "<img src=\"http://aux.iconpedia.net/uploads/17209831951787883743.png\">";
+else
+	return " "; 
+}
+function platformTypeicon(){
+var plat=navigator.userAgent;
+var out=plat.search("iPhone");
+out+=plat.search("Android");
+out+=plat.search("iPad");
+if(out !=-3)
+	return "";
+else
+	return "<img src=\"http://www.thuviencantho.org.vn/images/stories/danh-ba-web/laptop.jpg\">"; 
+}
+
+function IEicon(){
+var browser=navigator.appName;
+var oot=browser.search("Internet");
+if(oot !=-1)
+return "<img src=\"http://makingwindowseasy.com/wp-content/uploads/2010/12/anti-ie-logo.png\">";
+else return "";
+}
+function firefoxicon(){
+var browser=navigator.userAgent;
+var oot=browser.search("Firefox");
+if(oot !=-1)
+return "<img src=\"http://people.mozilla.com/~faaborg/files/shiretoko/firefoxIcon/firefox-256-noshadow.png\">";
+else return "";
+}
+function netscapeicon(){
+var browser=navigator.userAgent;
+var oot=browser.search("Netscape");
+if(oot !=-1)
+return "<img src\"http://www.zanst.info/files/1134_7_netscape.jpg\">";
+else return "";
+}
+function operaicon(){
+var browser=navigator.userAgent;
+var oot=browser.search("Opera");
+if(oot !=-1)
+return "<img src=\"http://www.meddal.com/meddal/wp-content/uploads/2010/12/Opera_512x512-300x300.png\">";
+else return "";
+}
+function chromeicon(){
+var browser=navigator.userAgent;
+var oot=browser.search("Chrome");
+if(oot !=-1)
+return "<img src=\"http://simplyzesty.com/wp-content/uploads//2011/10/chrome-a_512-300x300.png\"> ";
+else return "";
+}
+function ubuntuicon(){
+var OS=navigator.userAgent;
+var oot=OS.search("Ubuntu");
+if(oot !=-1)
+return "<img src=\"http://3.bp.blogspot.com/-6ahvW_wchFU/TbXA_xdPBEI/AAAAAAAAAJc/V46SYqkrwlU/s200/00C8000003776856-photo-ubuntu-logo-sq.jpg\">";
+else return "";
+}
+function macicon(){
+var OS=navigator.platform;
+var oot=OS.search("Mac");
+if(oot !=-1)
+return " <img src=\"http://spriteshack.com/ArticleImages/osx_logo.jpg\"> ";
+else return "";
+}
+function windowsicon(){
+var OS=navigator.userAgent;
+var oot=OS.search("Internet");
+if(oot !=-1)
+return " <img src=\"http://www.liquidmatrix.org/blog/wp-content/uploads/2008/11/windows-old-logo.jpg\">";
+else return "";
+}
+
+
+
+document.write(format());
+document.write(platformType());
+document.write(iphone());
+document.write(ipad());
+document.write(ipod());
+document.write(android());
+document.write(IE());
+document.write(firefox());
+document.write(netscape());
+document.write(opera());
+document.write(chrome());
+document.write(ubuntu());
+document.write(mac());
+document.write(ios5());
+document.write(ipadios5());
+document.write(ios4());
+document.write(ipadios4());
+document.write(windows());
+
+document.write(platformTypeicon());
+document.write(iphoneicon());
+document.write(ipadicon());
+document.write(ipodicon());
+document.write(androidicon());
+document.write(IEicon());
+document.write(firefoxicon());
+document.write(netscapeicon());
+document.write(operaicon());
+document.write(chromeicon());
+document.write(ubuntuicon());
+document.write(macicon());
+document.write(windowsicon());
+</script>
+</body>
+</html>

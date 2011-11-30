@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>arrays and stuff</title>
+</head>
+<body>
+<script type="text/javascript">
+var book=new Array(6);
+book[0]="durr";
+book[1]="durrr";
+book[2]="durrrr";
+book[3]="durrrrr";
+book[4]="durrrrrr";
+book[5]="durrrrrrr";
+
+var colors=new Array("red","green","blue");
+var x;
+for (x=0;x<book.length; x++){
+document.write(book[x]+"<br/>");
+}
+book.push("new item");
+for(x=0; x<book.length; x++){
+	document.write(book[x]+"<br/>");
+}
+
+document.write(Math.random()+"<br/>");
+
+var bob="This is exciting!";
+document.write(bob+"<br/>");
+document.write(bob.length+"<br/>");
+document.write(bob.blink()+"<br/>");
+document.write(bob.toUpperCase().blink()+"<br/>");
+
+
+</script>
+</body>
+</html>
+

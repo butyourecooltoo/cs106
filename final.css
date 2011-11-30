@@ -1,0 +1,110 @@
+body{
+	background-color: #686868;
+	text-decoration: none;
+}
+a{text-decoration: none;
+}
+
+h1{ font-family: arial;
+	font-size: 60;
+	color: white;
+}
+h1 a{ font-family: arial
+	font-size: 60;
+	color: white;
+}
+h1 a:hover{font-family: arial;
+	font-size: 60;
+	color:#16485a;
+}
+
+h2{ color: #3f5861;
+	font-family: arial;
+	font-size: 35;
+}
+h2:hover{
+	color: white;
+}
+
+#artpreview{
+	border-radius: 10;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 25px;
+}
+#musicpreview{
+	border-radius: 10;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 25px;
+}
+.topbar{
+	background-color: #3f9fc3;
+	opacity: .5;
+	width: 100%;
+	position: fixed;
+	z-index: 500;
+	font-family: arial;
+	font-size: 60;
+	color:#16485a;
+	border-radius: 10;
+	
+}
+.leftbox1{
+	background-color: #538395;
+
+	width: 550px;
+	height: 590px;
+	position: relative;
+	top: 80px;
+	border-width: 5px;
+	border-radius: 10;
+	z-index: 300;
+}
+.rightbox1{
+	background-color: #538395;
+	width: 550px;
+	height: 590px;
+	left: 600px;
+	top: -540px;
+	position: relative;
+	border-radius: 10;
+	z-index: 300;
+}
+
+
+.leftbox2{
+	background-color: #538395;
+	width: 550px;
+	height: 590px;
+	position: relative;
+	top: -540px;
+	border-radius: 10;
+	z-index: 300;
+}
+.rightbox2{
+	background-color: #538395;
+	width: 550px;
+	height: 590px;
+	left: 600px;
+	top: -1155px;
+	position: relative;
+	border-radius: 10;
+	z-index: 300;
+}
+.fade{
+	width: 60px;
+	height: 100%;
+	top: 50px;
+	left: 1250px;
+	position: absolute;
+	z-index: 200;
+}
+.top{
+	top: 50px;
+	left:1250px;
+	position: fixed;
+	z-index: 100;
+}

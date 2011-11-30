@@ -1,0 +1,33 @@
+.one{
+	color: rgb(35,78,200);
+	background: rgb(200,35,78);
+}
+.two{
+	color: rgb(78,200,35);
+	background: rgb(35,78,200);
+}
+.two{
+	color: rgb(200,35,78);
+	background: rgb(78,200,35);
+}
+
+#first{
+	position: absolute;
+	top: 50px;
+	background: rgb(200,35,78);
+	
+}
+#second{
+	position: absolute;
+	top: 100px;
+	background: rgb(35,78,200);
+	
+}
+#third{
+	position: absolute;
+	top: 150px;
+	background: rgb(78,200,35);
+	
+}
+
+

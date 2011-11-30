@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel=stylesheet href="hw12.css" type="text/css" />
+<title>hw12</title>
+</head>
+<body>
+
+<table border="2">
+<script type="text/javascript">
+var y,x,z;
+var count=prompt("enter a number","");
+count=parseInt(count);
+document.write("<th>"+"x"+"</th>")
+for (z=1; z<=count; z++){
+document.write("<th>"+(z)+"</th>");
+}
+for (y=1; y<=count; y++){
+document.write("<tr><th>"+(y)+"</th>");
+for (x=1; x<=count; x++){
+document.write("<td><h1>"+(x*y)+"<?h1></td>");
+}
+document.write("</tr>");
+}
+</script>
+</table>
+
+<script type="text/javascript">
+
+
+function nnbtls(bottles){
+var bottles;
+for(bottles=99; bottles>0; bottles--){
+document.write("<h2>"+bottles+" bottles of beer on the wall, "+bottles+" bottles of beer. Take one down, pass it around, "+(bottles-1)+" bottles of beer on the wall.</h2>");	
+}
+}
+nnbtls(99)
+</script>
+<script type="text/javascript">
+
+
+var i=prompt("type an odd positive integer.","");
+while(i<=0){
+i=prompt("that wasn't an odd positive integer, woodchuck.","")
+}
+if(i=="beaver"){
+alert("you are a beaver. ")
+}
+var a=(i-1)
+for(a=i-1; a=0; a--){
+document.write("*")
+}
+</script>
+
+
+
+</body>
+</html>
+

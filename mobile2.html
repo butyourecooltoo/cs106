@@ -1,0 +1,24 @@
+<html>
+<head><title>mobile stuff</title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+function platformType(){
+var plat=navigator.userAgent;
+var out=plat.search("iPhone");
+out+=plat.search("Android");
+if(out !=-2)
+	return "mobile";
+else
+	return "not-mobile"; 
+}
+document.write(platformType()+"<br/>");
+document.write("Browser: "+navigator.appName+"<br/>");
+document.write("Version: "+navigator.appVersion+"<br/>");
+document.write("User agent: "+navigator.userAgent+"<br/>");
+document.write("Platform: "+navigator.platform+"<br/>");
+</script>
+</body>
+</html>

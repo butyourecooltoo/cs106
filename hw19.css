@@ -1,0 +1,12 @@
+#bobdy{ position: absolute;
+	z-index: 500;
+}
+
+h1{ color: white;
+	font-size: 50;
+	font-family: arial;
+}
+body{ background-color: gray;
+}
+
+

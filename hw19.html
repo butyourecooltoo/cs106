@@ -1,0 +1,26 @@
+<head>
+<title>hw19</title>
+<link rel=stylesheet href="hw19.css">
+<script type="text/javascript">
+function goup(id){
+	var temp=document.getElementById(id);
+	temp.style.top=Math.random()*window.innerHeight;
+	temp.style.left=Math.random()*window.innerWidth;
+	temp.className=classes[current];
+	current++;
+	current%=classes.length;
+}
+function goback(id){
+	var temp=document.getElementById(id);
+	temp.style.top=1;
+	temp.style.left=1;
+}
+</script>
+</head>
+<body onmouseup="goback('bobdy')">
+<div id="bobdy" onmousedown="goup('bobdy')">
+<h1> you can't click me. </h1>
+</div>
+</body>
+</html>
+

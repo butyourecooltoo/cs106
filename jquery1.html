@@ -1,0 +1,44 @@
+<head>
+	<title>funtertainments         jquery examples</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("p").click(function(){
+		$(this).fadeOut("fast");
+	});
+$("p").mouseover(function(){
+	$(this).css({
+	"left":(Math.random()*$(window).width())+"px","top":(Math.random()*$(window).height())+"px"});
+});
+
+$("p:odd").css("color", "#ff0000");
+
+
+$('#clickme').click(function() {
+      $('#book').slideToggle('slow');
+    });
+/*$('#clickme').mouseout(function(){
+$('#book').fadeOut('slow');
+});*/
+});
+
+</script>
+</head>
+<body>
+<div id='clickme'>
+      Click here
+    </div>
+    <img id='book' src="http://media.tumblr.com/tumblr_lnkxdijHiP1qad5z9.gif" alt=""/>
+<p style="position: absolute;">some text 1</p>
+<p style="position: absolute;">some text 2</p>
+<p style="position: absolute;">some text 3</p>
+<p style="position: absolute;">some text 4</p>
+<p style="position: absolute;">some text 5</p>
+<p style="position: absolute;">some text 6</p>
+<p style="position: absolute;">some text 7</p>
+<p style="position: absolute;">some text 8</p>
+<p style="position: absolute;">some text 9</p>
+<p style="position: absolute;">some text 10</p>
+</body>
+</html>
+

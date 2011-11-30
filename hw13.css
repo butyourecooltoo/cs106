@@ -1,0 +1,19 @@
+body{ background-color: grey;
+}
+
+h1{ color: purple;
+	font-family: arial;
+	font-size: 40;
+}
+h2{
+	color: purple;
+	font-family: arial;
+	font-size: 40; 
+}
+a{
+	text-decoration:none;
+}
+h2:hover{ 
+color: white;
+	font-size: 45;
+}

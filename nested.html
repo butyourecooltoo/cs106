@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>nest this</title>
+</head>
+<body>
+<table border="2">
+<script type="text/javascript">
+var y,x,z;
+var count=prompt("enter a number","");
+count=parseInt(count);
+document.write("<th>"+"x"+"</th>")
+for (z=1; z<=count; z++){
+document.write("<th>"+(z)+"</th>");
+}
+for (y=1; y<=count; y++){
+document.write("<tr><th>"+(y)+"</th>");
+for (x=1; x<=count; x++){
+document.write("<td>"+(x*y)+"</td>");
+}
+document.write("</tr>");
+}
+</script>
+</table>
+</body>
+</html>
+

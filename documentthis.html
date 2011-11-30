@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>browser object</title>
+</head>
+<body>
+<script type="text/javascript">
+function goBack(){
+history.go(-1)
+}
+var win;
+function openWindow(){
+win=window.open();
+win.document.write("<html><head><title>");
+win.document.write("new window</title>");
+win.document.write("</head><body>I am your body.");
+win.document.write("</body></html>");
+}
+function closeWindow(){
+win.close();
+}
+
+setInterval(alert("wow this is fun!"),5000);
+
+/*
+var comment="Paul is reallty really cool";
+comment+="and everybody likes him.";
+coment+="david, jake and alec all semll";
+comment+="bad. ";
+function feelGood(){
+comment=comment.substring(1,comment.length)+
+comment.substring(0,1);
+window.document.title=comment;
+}
+setInterval(feelGood,100);
+*/
+/*the below thing closes new windows after 5 seconds. */
+function delayWindow(){
+(openWindow);
+setTimeout(closeWindow,5000);
+}
+</script>
+
+<a href="javascript:goBack()"> click me</a>
+<a href="javascript:openWindow()"> open window</a>
+<a href="javascript:closeWindow()"> close window</a>
+<a href="javascript:delayWindow()"> delay window</a>
+</body>
+</html>
+

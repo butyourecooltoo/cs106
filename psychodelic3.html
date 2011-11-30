@@ -1,0 +1,99 @@
+<html>
+<head><title>calm and relaxing</title>
+</head>
+<body id="bob">
+<script type="text/javascript">
+var fS=16;
+var fE=0;
+var fC=0;
+var fT=0;
+function fontThis(){
+	if (fT<=0){
+	fT=Math.random()*100+10;
+	fE=3+Math.random()*100;
+	fC=(fE-fS)/fT;
+	} else {
+	fS+=fC;
+	fT-=1;	
+}
+document.getElementById('bob').style.fontSize=parseInt(fS);
+}
+var hex=new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
+function toHex(numIn){
+	var num=parseInt(numIn);
+	var ones=(num%16);
+	var sixteens=parseInt(num/16);
+	return hex[sixteens]+hex[ones];
+}
+setInterval(fontThis,100);
+
+var rS=0;
+var rE=0;
+var rC=0;
+var gS=0;
+var gE=0;
+var gC=0;
+var bS=0;
+var bE=0;
+var bC=0;
+var T=0;
+function changeBG(){
+	if (T<=0){
+	T=Math.random()*50+10;
+	rE=parseInt(Math.random()*256);
+	rC=(rE-rS)/T;
+	gE=parseInt(Math.random()*256);
+	gC=(gE-gS)/T;
+	bE=parseInt(Math.random()*256);
+	bC=(bE-bS)/T;
+	} else {
+	rS+=rC;
+	gS+=gC;
+	bS+=bC;
+	T-=1;
+
+	}
+	document.bgColor=toHex(rS)+toHex(gS)+toHex(bS);
+}
+setInterval(changeBG,1);
+
+
+
+
+var rS2=0;
+var rE2=0;
+var rC2=0;
+var gS2=0;
+var gE2=0;
+var gC2=0;
+var bS2=0;
+var bE2=0;
+var bC2=0;
+var T2=0;
+function changeFG(){
+	if (T2<=0){
+	T2=Math.random()*50+10;
+	rE2=parseInt(Math.random()*256);
+	rC2=(rE2-rS2)/T2;
+	gE2=parseInt(Math.random()*256);
+	gC2=(gE2-gS2)/T2;
+	bE2=parseInt(Math.random()*256);
+	bC2=(bE2-bS2)/T2;
+	} else {
+	rS2+=rC2;
+	gS2+=gC2;
+	bS2+=bC2;
+	T2-=1;
+
+	}
+	document.fgColor=toHex(rS2)+toHex(gS2)+toHex(bS2);
+}
+setInterval(changeFG,3);
+</script>
+
+<h1>LOL THIS IS STUPID YOU ARE STUPID EVERYTHING IS STUPID</h1>
+
+
+
+</body>
+</html>

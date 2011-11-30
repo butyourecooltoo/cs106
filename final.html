@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>WARNING site not complete!</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel=stylesheet type="text/css" href="final.css">
+</head>
+<body>
+<script type="text/javascript">
+var apr= new Array(7)
+apr[0]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr1.jpg\">";
+apr[1]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr2.jpg\">";
+apr[2]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr3.jpg\">";
+apr[3]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr4.jpg\">";
+apr[4]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr5.jpg\">";
+apr[5]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr6.jpg\">";
+apr[6]="<img id=\"artpreview\" src=\"http://stout.hampshire.edu/~tfh11/artpreview/apr7.jpg\">";
+function randapr(){
+randno = Math.floor(Math.random()*7 ); 
+var newurl=(apr[randno]);
+return newurl;
+}
+setInterval(randapr,50000000000);
+</script>
+
+<script type="text/javascript">
+var mpr= new Array(7)
+mpr[0]="<img id=\"musicpreview\" src=\"http://stout.hampshire.edu/~tfh11/musicpreview/mpr1.jpg\">";
+mpr[1]="<img id=\"musicpreview\" src=\"http://stout.hampshire.edu/~tfh11/musicpreview/mpr2.jpg\">";
+mpr[2]="<img id=\"musicpreview\" src=\"http://stout.hampshire.edu/~tfh11/musicpreview/mpr3.jpg\">";
+mpr[3]="<img id=\"musicpreview\" src=\"http://stout.hampshire.edu/~tfh11/musicpreview/mpr4.jpg\">";
+function randmpr(){
+randno = Math.floor(Math.random()*4 ); 
+var newurl2=(mpr[randno]);
+return newurl2;
+}
+setInterval(randmpr,50000000000);
+</script>
+
+<div class="top"></div>
+<div class="topbar">
+</h1> &nbsp; &nbsp; this is my art site</h1>
+</div>
+<div class="fade"><a href="#top"><img src="fade2.png"></a></div>
+<div class="top">
+<a href="#top"><h2>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/>^<br/></h2></a>
+</div>
+<div id="lb1" class="leftbox1">
+<a href="http://www.stout.hampshire.edu/~tfh11/"><h2>&nbsp; &nbsp; &nbsp; graphics</h2>
+<img id="artpreview" src="http://stout.hampshire.edu/~tfh11/artpreview/apr1.jpg"></a></div><div id="rb1" class="rightbox1"><a href="http://www.stout.hampshire.edu/~tfh11/"><h2>&nbsp; &nbsp; &nbsp; music</h2><img id="musicpreview" src="http://stout.hampshire.edu/~tfh11/musicpreview/mpr1.jpg"></a></div><div class="leftbox2">
+<a href="http://www.stout.hampshire.edu/~tfh11/"><h2>&nbsp; &nbsp; &nbsp; photos</h2></a>
+</div><div class="rightbox2"><a href="http://www.stout.hampshire.edu/~tfh11/"><h2>&nbsp; &nbsp; &nbsp; other</h2></a></div>
+
+<script type="text/javascript">
+$('#lb1').mouseover(function() {
+      $('#artpreview').replaceWith(randapr);
+    });
+</script>
+<script type="text/javascript">
+$('#rb1').mouseover(function() {
+      $('#musicpreview').replaceWith(randmpr);
+    });
+</script>
+</body>
+</html>

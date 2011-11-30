@@ -1,0 +1,201 @@
+
+body{
+	overflow: scroll;
+}
+a{
+text-decoration:none;
+}
+body{
+	background-color: #686868;
+}
+h1{
+	font-family: arial;
+	font-size: 50pt;
+	color: #6da79f
+}
+.explanation{
+	background-color: black;
+	height: 100px;
+	width: 200%;
+	border-radius: 10px;
+}
+
+.block{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	background-color: #6da79f;
+	width: 50px;
+	height: 50px;
+	z-index: -1;
+}
+.try{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	font-family: arial;
+	font-size: 15pt;
+	color: #6da79f;
+	z-index: 3;
+}
+.spacerl{
+	
+	position: center;
+	top:1px;
+	width:400%;
+	height: 200%
+	background-color: #686868;
+
+}
+
+.obstacle1{
+	position: relative;
+	left: -150px;
+	top: 300px;
+	width: 150%;
+	height: 600px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle2{
+	position: relative;
+	left: 2200px;
+	top: -300px;
+	width: 150%;
+	height: 600px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}	
+.obstacle3{
+	position: relative;
+	left: 1900px;
+	top: -300px;
+	width: 10%;
+	height: 600px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle4{
+	position: relative;
+	left: 2500px;
+	top: -1050px;
+	width: 100%;
+	height: 600px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle5{
+	position: relative;
+	left: -500px;
+	top: -1100px;
+	width: 200%;
+	height: 600px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle6{
+	position: relative;
+	left: 2700px;
+	top: -1700px;
+	width: 50%;
+	height: 500px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle7{
+	position: relative;
+	left: 2120px;
+	top: -1780px;
+	width: 50%;
+	height: 80px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle8{
+	position: relative;
+	left: 3800px;
+	top: -3000px;
+	width: 50%;
+	height: 6000px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle9{
+	position: relative;
+	left: 2120px;
+	top: -7700px;
+	width: 50%;
+	height: 9000px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle10{
+	position: relative;
+	left: 1120px;
+	top: -17000px;
+	width: 50%;
+	height: 9000px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle11{
+	position: relative;
+	left: 600px;
+	top: -26260px;
+	width: 50%;
+	height: 80px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle12{
+	position: relative;
+	left: 1500px;
+	top: -18000px;
+	width: 50%;
+	height: 80px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}
+.obstacle13{
+	position: relative;
+	left: 2820px;
+	top: -26300px;
+	width: 61%;
+	height: 80px;
+	background-color: #e08841;
+	border: 50px solid #6da79f;
+	border-radius:10px;
+	z-index: 2;
+}
+.congatrulations{
+	position: relative;
+	left: 2900px;
+	top: -21800px;
+	border: 50px solid #6da79f;
+	border-radius: 10px;
+	z-index: 2;
+}

@@ -1,0 +1,37 @@
+<html>
+<head><title>i am cool</title>
+<link rel=stylesheet href="hw18.css" type="text/css"/>
+</head>
+<body>
+<script type="text/javascript">
+var stupidity=new Array(10)
+stupidity[0]="http://stout.hampshire.edu/~tfh11/1.gif";
+stupidity[1]="http://stout.hampshire.edu/~tfh11/2.gif";
+stupidity[2]="http://stout.hampshire.edu/~tfh11/3.gif";
+stupidity[3]="http://stout.hampshire.edu/~tfh11/4.gif";
+stupidity[4]="http://stout.hampshire.edu/~tfh11/5.gif";
+stupidity[5]="http://stout.hampshire.edu/~tfh11/6.gif";
+stupidity[6]="http://stout.hampshire.edu/~tfh11/7.gif";
+stupidity[7]="http://stout.hampshire.edu/~tfh11/8.gif";
+stupidity[8]="http://stout.hampshire.edu/~tfh11/9.gif";
+stupidity[9]="http://stout.hampshire.edu/~tfh11/10.gif";
+stupidity[10]="http://stout.hampshire.edu/~tfh11/11.gif";
+stupidity[11]="http://stout.hampshire.edu/~tfh11/12.jpg";
+stupidity[12]="http://stout.hampshire.edu/~tfh11/13.jpg";
+stupidity[13]="http://stout.hampshire.edu/~tfh11/14.jpg";
+function myspaceify(){
+randno = Math.floor(Math.random()*14 ); 
+var newurl=(stupidity[randno]);
+document.write("<img src=\""+newurl+"\"onMouseOver=\"myspaceify2()\">");
+}
+function myspaceify2(){
+randno = Math.floor(Math.random()*14 ); 
+var newurl=(stupidity[randno]);
+document.write("<img src=\""+newurl+"\"onMouseOver=\"myspaceify()\">");
+}
+
+
+</script>
+<h1 onmouseover="myspaceify()">hello</h1>
+</body>
+</head>

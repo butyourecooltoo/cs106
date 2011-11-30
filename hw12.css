@@ -1,0 +1,32 @@
+th{ 
+	background-color: #7298b5;
+	color: #d5c34d;
+	font-family: arial;
+	font-size:30;
+}
+table{
+	border-width: 25;
+	border-color: #7298b5;
+	border-radius: 15;
+	width: 50%;
+	position: fixed;
+}
+h1{
+	color: #7298b5;
+	font-family: arial;
+	font-size: 25;
+}
+body{
+	background-color: gray;
+}
+h2{
+	background-color: gray;
+	opacity: 5;
+	position: relative;
+	left: 70%;
+	padding: 10px;
+	color: #7298b5;
+	font-family: arial;
+	font-size: 30;
+	text-decoration: none;
+}

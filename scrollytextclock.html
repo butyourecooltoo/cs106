@@ -1,0 +1,49 @@
+<html>
+<head><title>get element by id</title>
+<link rel=stylesheet href="moveText.css" type="text/css">
+<script type="text/javascript">
+
+
+var classes=new Array("one","two","three");
+var current=0;
+
+function moveThis(anId){
+	var temp=document.getElementById(anId);
+	temp.style.top=Math.random()*window.innerHeight;
+	temp.style.left=Math.random()*window.innerWidth;
+	temp.className=classes[current];
+	current++;
+	current%=classes.length;
+}
+var angle=0;
+var offset=300;
+var r=200;
+var text="can't touch this! ";
+function scrollText(){
+text=text.substring(1,text.length)+text[0];
+var temp=document.getElementById("first");
+temp.innerHTML=text;
+temp.style.top=Math.sin(angle)*r+offset;
+temp.style.left=Math.cos(angle)*r+offset;
+angle+=0.1;
+var temp=document.getElementById("second");
+temp.innerHTML=text;
+var temp=document.getElementById("third");
+temp.innerHTML=text;
+}
+setInterval(scrollText,100);
+
+function changeThis(colorIn){
+	var temp=document.getElementById("num1");
+temp.style.color=colorIn;
+}
+</script>
+</head>
+<body>
+<div id="first" onMouseOver="moveThis('first')">first</div>
+<div id="second" onMouseOver="moveThis('second')">second</div>
+<div id="third" onMouseOver="moveThis('third')">third</div>
+put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text<span id="num1" onMouseOver="changeThis('red')" onMouseOut="changeThis('black')">some other text some other textsome other text some other textsome other text some other textsome other text some other text</span>put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text put in a lot of text 
+
+</body>
+</html>

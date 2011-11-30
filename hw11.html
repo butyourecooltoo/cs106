@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel=stylesheet href="scriptstyle.css" type="text/css" />
+<title>hw11</title>
+</head>
+<body>
+<script type="text/javascript">
+ var tempp=confirm("with this magical annoying set of boxes you can add up to five whole numbers!");
+  if (tempp){
+  var i=prompt("type a number:");
+  var sum=0;
+	var num=0
+  for (num=0;num<=3;num++) {
+  i=parseInt(i);
+  sum+=i;
+  i=prompt("type another number or type done to view the results:");
+	
+}
+
+  alert("total is:"+ sum);
+}
+
+  else alert("You're no fun!");
+
+
+  var countdown=prompt("Enter a number greater than 0:");
+for (countdown!=0; countdown>=0; countdown--){
+document.write(countdown+"</br>")
+}
+
+function sqr(){
+
+var number=prompt("gimme a number","");
+	var squared=number*number;
+	alert(number+" squared is "+squared);
+}
+
+</script>
+<a href="javascript:sqr()">click me</a>
+
+</body>
+</html>

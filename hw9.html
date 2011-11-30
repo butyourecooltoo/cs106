@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>hw9</title>
+</head>
+<body>
+<script type="text/javascript">
+ var tempp=confirm("Want to add some numbers");
+  if (tempp){
+  var num=prompt("type a number:");
+  var sum=0;
+  while (num!="done" && num!="Done" && num!="DONE") {
+  num=parseInt(num);
+  sum+=num;
+  num=prompt("type another number or type done to view the results:");
+}
+
+  alert("total is:"+ sum);
+}
+
+  else alert("You're no fun!");
+  var countdown=prompt("Enter a number greater than 0:");
+  while (countdown<=0){
+  countdown=prompt("has to be greater than 0, choose another:");
+}
+
+ while (countdown>=0){
+ document.write(countdown+"<br/>");
+countdown--;
+  }
+
+</script>
+</body>
+</html>

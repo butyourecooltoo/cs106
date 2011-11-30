@@ -1,0 +1,52 @@
+body{
+background-color: black
+}
+h1{ 
+	font-family: arial;
+	font-size: 30;
+	color: white;
+	
+}
+ul{
+	margin:0;
+	padding:0;
+	width:400px;
+	list-style: none;	
+	border-bottom: 10px solid gray;
+	border-radius:15px;
+}
+ul li{
+	position: relative;
+}
+
+li ul{
+	position: absolute;
+	left: 400px;
+	top:0;
+	display: none;
+}
+li:hover ul{
+display: block;
+}
+ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	background: #4074a9;
+	border: 10px solid gray;
+	border-radius:15px;
+	border-bottom: 0;
+	padding:5px;
+}
+
+li:hover a{
+	color: red;
+}
+a:hover{
+	color: white;
+	background-color: #729fcf;
+}
+li ul li a:hover{
+	color: white;
+	background-color: #729fcf;
+}

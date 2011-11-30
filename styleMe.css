@@ -1,0 +1,39 @@
+h1 {color:red;}
+h2, h3, h4{
+	color:blue;
+background-color:yellow;
+}
+
+table {
+	WIDTH:100%;
+}
+{h2
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: verdana;
+}
+
+{h4
+	font:bold 24pt arial;
+}
+{h4
+  color: rgb(234,0,45);
+
+}
+{h5
+  color: rgb(100%,5%,30%);
+}
+h6{
+  color: #ffff33;
+}
+body{
+	background-color: #c0ffee;
+}
+
+p{
+	border-width: thick;
+	border-color: red blue green orange;
+	border-style: solid;
+	padding: 15px;
+	width: 200px;
+}

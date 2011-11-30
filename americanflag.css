@@ -1,0 +1,60 @@
+body{
+	background-color: #686868
+}
+td table{
+	background-color:blue
+}
+td table{
+	border: 0
+}
+table{
+	border: 2;
+	background: #bcbcbc
+}
+
+h1{
+	font-size: 25
+}
+h1{
+	color:red
+}
+h1{
+	background-color: red
+}
+
+
+
+h3{
+	font-size: 25
+}
+h3{
+	color: white
+}
+h3{
+	background-color: white
+}
+
+h4{
+	font-size: 15
+}
+h4{
+	color: white
+}
+h6{
+	font-family: arial;
+	font-size: 50pt;
+	color: #8d8d8d
+}
+h5{
+	font-family: arial;
+	font-size: 32pt;
+	color: #71a7d5
+}
+h2{
+	font-family: arial;
+	font-size:32pt;
+	color: #ff7800
+}
+
+
+

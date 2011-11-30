@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>durr</title>
+</head>
+<body>
+<script type="text/javascript">
+var i=10;
+while (i>=0){
+document.write(i+"</br>");
+i--;
+}
+for (i=10; i>=0; i--){
+document.write(i+"</br>")
+}
+function getNumber(phrase, insult){
+var input=prompt(phrase,"");
+input=parseInt(input);
+while(isNaN(input)){
+input=prompt("I said "+phrase+" "+insult,"jackass","");
+input=parseInt(input);
+}
+return input;
+}
+/*var one=getNumber("enter a number please","jackass");
+var two=getNumber("now enter another number","moron");
+var three=getNumber("enter a third number","sports illustrated reader");
+document.write("one="+one+" two="+two+"three="+three);*/
+
+
+function ctof(){
+
+var temp=getNumber("please enter a temperature in celcius","enlightened person");
+	var tempf=temp*9/5+32;
+	alert(temp+" degrees Celskjfldsuis is "+tempf+" degrees in Faeringhieislhtliseakls.");
+}
+</script>
+<a href="javascript:ctof()">click me</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+ul{
+	margin:0;
+	padding:0;
+	width:150px;
+	list-style: none;	
+	border-bottom: 1px solid blue;
+}
+ul li{
+	position: relative;
+}
+
+li ul{
+	position: absolute;
+	left: 149px;
+	top:0;
+	display: none;
+}
+li:hover ul{
+display: block;
+}
+ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	background: white;
+	border: 1px solid blue;
+	border-bottom: 0;
+	padding:5px;
+}
+
+li:hover a{
+	color: red;
+}
+a:hover{
+	color: white;
+	background-color: black;
+}
+li ul li a:hover{
+	color: white;
+	background-color: red;
+}

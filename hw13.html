@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel=stylesheet href="hw13.css" type="text/css" />
+
+
+<title>hw13</title>
+<script type="text/javascript">
+var colors=new Array();
+colors[0]=" red";
+colors[1]=" green";
+colors[2]=" blue";
+colors[3]=" purple";
+colors[4]=" kinda brownish sorta thing";
+colors[5]=" black";
+function morecolors(){
+ temp=prompt("what colors can you think of?");
+      colors.push(temp);
+      alert("here are all the colors we know about. "+colors);
+    } 
+    function allthecolors (){
+      alert(colors);    
+    }
+</script>
+<script type= "text/javascript">
+function firstletter(temp){
+      temp=prompt("what is the biggest, most complicated word you can think of?","");
+	var str=temp;
+      firstletter=(str.charAt(0));
+      alert("The first letter of your word is "+firstletter+" but i didn't read the rest...");
+    }
+</script>
+</head>
+<body>
+<h1>Here are all the colors I can think of:</h1>
+<script type="text/javascript">
+document.write("<h1>"+colors+"</h1><br/>");
+</script>
+<h1>I think there are more but I don't know</h1>
+<a href="javascript:morecolors()"><h2>do you?</h2></a><br/>
+<a href="javascript:allthecolors()"><h2>want to see that list again?</h2></a><br/><br/>
+<a href="javascript:firstletter()"><h2>click on me to do a thing!</h2></a><br/><br/>
+</body>
+</html>
+
